@@ -6,13 +6,87 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+    <Button
+        android:id="@+id/btnAirHumidity"
+        android:layout_width="188dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="365dp"
+        android:text="@string/btnAirHumidity_tr"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toStartOf="@+id/btnSmokeDensity"
+        app:layout_constraintStart_toStartOf="parent" />
 
+    <Button
+        android:id="@+id/btnDirtCheck"
+        android:layout_width="188dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="9dp"
+        android:text="@string/btnDirtCheck_tr"
+        app:layout_constraintBottom_toTopOf="@+id/btnAirHumidity"
+        app:layout_constraintEnd_toStartOf="@+id/btnAirTemperature"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnAirTemperature"
+        android:layout_width="188dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="11dp"
+        android:text="@string/btnAirTemperature_tr"
+        app:layout_constraintBottom_toTopOf="@+id/btnSmokeDensity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnDirtCheck" />
+
+    <Button
+        android:id="@+id/btnSmokeDensity"
+        android:layout_width="188dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="364dp"
+        android:text="@string/btnSmokeDensity_tr"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnAirHumidity" />
+
+    <ImageButton
+        android:id="@+id/btnPowerOff"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="71dp"
+        android:layout_marginBottom="156dp"
+        android:contentDescription="@string/btnPowerOff_tr"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/power_off"
+        tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck,ImageContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/btnPowerOn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="83dp"
+        android:layout_marginBottom="156dp"
+        android:contentDescription="@string/btnPowerOn_tr"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/power_on"
+        tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck,ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="190dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="92dp"
+        android:text="@string/txtWelcome_tr"
+        android:textIsSelectable="false"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

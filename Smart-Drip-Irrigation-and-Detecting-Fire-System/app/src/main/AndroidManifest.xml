@@ -18,6 +18,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".SmokeDensityActivity"></activity>
+        <activity android:name=".DirtCheckActivity"></activity>
+        <activity android:name=".AirTemperatureActivity"></activity>
+        <activity android:name=".AirHumidityActivity"></activity>
     </application>
 
 </manifest>
